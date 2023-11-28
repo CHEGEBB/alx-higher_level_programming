@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "PYCODE=$PYCODE"
+
+if[-z "$PYCODE"]; then
+
+echo"Error :PYCODE environment variable not set."
+exit 1
+
+fi
+if [ ! -f "$PYCODE"]; then
+echo"Error :File $PYCODE not found."
+exit 1
+
+fi
+
+python3 "$PYCODE"

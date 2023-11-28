@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get the Python script name from the environment variable
+PYFILE="$PYFILE"
+
+# Check if the Python script file exists
+if [ ! -f "$PYFILE" ]; then
+  echo "Error: Python script file '$PYFILE' not found"
+  exit 1
+fi
+
+# Run the Python script
+python3 "$PYFILE"
