@@ -1,16 +1,2 @@
 #!/bin/bash
-
-# Check if PYFILE environment variable is set
-if [ -z "$PYFILE" ]; then
-    echo "Error: PYFILE environment variable not set."
-    exit 1
-fi
-
-# Check if the specified Python file exists
-if [ ! -f "$PYFILE" ]; then
-    echo "Error: File $PYFILE not found."
-    exit 1
-fi
-
-# Run the Python script without echoing the PYFILE variable
-python3 "$PYFILE"
+python3 $PYFILE
