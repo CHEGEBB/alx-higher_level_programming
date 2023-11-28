@@ -1,28 +1,54 @@
-Python Scripts
-Allowed editors: vi, vim, emacs
-All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
-All your files should end with a new line
-The first line of all your files should be exactly #!/usr/bin/python3
-A README.md file at the root of the repo, containing a description of the repository
-A README.md file, at the root of the folder of this project, is mandatory
-Your code should use the pycodestyle (version 2.8.*)
-All your files must be executable
-The length of your files will be tested using wc
-Shell Scripts
-Allowed editors: vi, vim, emacs
-All your scripts will be tested on Ubuntu 20.04 LTS
-All your scripts should be exactly two lines long (wc -l file should print 2)
-All your files should end with a new line
-The first line of all your files should be exactly #!/bin/bash
-All your files must be executable
-C Scripts
-Allowed editors: vi, vim, emacs
-All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-All your files should end with a new line
-Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-You are not allowed to use global variables
-No more than 5 functions per file
-In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
-The prototypes of all your functions should be included in your header file called lists.h
-Don’t forget to push your header file
-All your header files should be include guarded
+# alx-higher_level_programming
+
+## Learning Objectives
+
+At the end of this project, you should be able to:
+
+- Explain why Python programming is awesome 🐍
+- Understand the importance of indentation in Python 🧐
+- Use if, if...else statements effectively
+- Write comments to explain your code 📝
+- Affect values to variables and understand variable scope 🔢
+- Use while and for loops in Python
+- Differentiate Python's for loop from C's
+- Utilize break and continue statements in loops
+- Work with else clauses in loops
+- Explain the purpose of the pass statement and when to use it
+- Understand the use of range in Python
+- Define and use functions, and explain return in functions
+- Understand the scope of variables
+- Recognize what a traceback is in Python
+- Use arithmetic operators and understand their functionality
+- Respect copyright and avoid plagiarism
+
+## Requirements
+
+### Python Scripts
+
+- Editors: vi, vim, emacs
+- Interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+- Files end with a new line
+- The first line of all files: `#!/usr/bin/python3`
+- Mandatory README.md file
+- Code should use pycodestyle (version 2.8.*)
+- All files must be executable
+- File length will be tested using wc
+
+### C Scripts
+
+- Editors: vi, vim, emacs
+- Compiled on Ubuntu 20.04 LTS using gcc with options: -Wall -Werror -Wextra -pedantic -std=gnu89
+- Files end with a new line
+- Code should follow the Betty style
+- Avoid global variables
+- No more than 5 functions per file
+- Prototypes of functions included in a header file (lists.h)
+- Don't forget to push your header file
+- All header files should be include guarded
+
+
+
+## Author
+
+CHEGEBB
+
