@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Print the value of PYFILE (for debugging)
-echo "PYFILE: $PYFILE"
-
 # Check if PYFILE environment variable is set
 if [ -z "$PYFILE" ]; then
     echo "Error: PYFILE environment variable not set."
@@ -15,5 +12,5 @@ if [ ! -f "$PYFILE" ]; then
     exit 1
 fi
 
-# Run the Python script
+# Run the Python script without echoing the PYFILE variable
 python3 "$PYFILE"
