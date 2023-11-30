@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-import dis
-from magic_calculation_102 import magic_calculation
 
-# Example usage and print the result
-result = magic_calculation(10, 5)
-print("Result:", result)
+def magic_calculation(a, b):
+    """Match bytecode provided by Holberton School."""
+    from magic_calculation_102 import add, sub
 
-# Print disassembled bytecode
-dis.dis(magic_calculation)
+    if a < b:
+        c = add(a, b)
+        for i in range(4, 6):
+            c = add(c, i)
+        return (c)
 
+    else:
+        return(sub(a, b))
