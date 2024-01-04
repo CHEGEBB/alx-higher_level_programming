@@ -26,6 +26,7 @@ def solve_nqueens(board, row, n):
         if is_safe(board, row, col):
             board[row] = col
             solve_nqueens(board, row + 1, n)
+            board[row] = -1  # Backtrack
 
 def nqueens(n):
     """Wrapper function to validate input and start solving"""
