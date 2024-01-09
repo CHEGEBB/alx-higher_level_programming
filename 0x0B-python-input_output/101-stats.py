@@ -7,6 +7,7 @@ prints the following statistics:
     - Count of read status codes up to that point.
 """
 
+from collections import defaultdict
 
 def print_stats(size, status_codes):
     """Print accumulated metrics.
@@ -19,13 +20,12 @@ def print_stats(size, status_codes):
     for key in sorted(status_codes):
         print("{}: {}".format(key, status_codes[key]))
 
-
 if __name__ == "__main__":
     import sys
 
     size = 0
-    status_codes = {}
-    valid_codes = ['200', '301', '400', '401', '403', '404', '405', '500']
+    status_codes = defaultdict(int)
+    valid_codes = {'200', '301', '400', '401', '403', '404', '405', '500'}
     count = 0
 
     try:
@@ -45,10 +45,7 @@ if __name__ == "__main__":
 
             try:
                 if line[-2] in valid_codes:
-                    if status_codes.get(line[-2], -1) == -1:
-                        status_codes[line[-2]] = 1
-                    else:
-                        status_codes[line[-2]] += 1
+                    status_codes[line[-2]] += 1
             except IndexError:
                 pass
 
