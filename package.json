@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
+}
