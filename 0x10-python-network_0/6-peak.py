@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """This module finds a peak in a list of unsorted integers.
-It uses a binary search algorithm to find the peak.
+It uses a modified binary search algorithm to find the peak.
+It achieves efficiency by comparing mid with its neighbors to decide the direction of search
 """
 
 def find_peak(list_of_integers):
@@ -9,14 +10,14 @@ def find_peak(list_of_integers):
     if not list_of_integers:
         return None
 
-    low = 0
-    high = len(list_of_integers) - 1
+    left = 0
+    right = len(list_of_integers) - 1
 
-    while low < high:
-        mid = (low + high) // 2
+    while left < right:
+        mid = (left + right) // 2
         if list_of_integers[mid] > list_of_integers[mid + 1]:
-            high = mid
+            right = mid
         else:
-            low = mid + 1
+            left = mid + 1
 
-    return list_of_integers[low]
+    return list_of_integers[left]
