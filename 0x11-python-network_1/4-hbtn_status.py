@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-
-"""This script fetches https://intranet.hbtn.io/status.
-It fetches the URL and displays the type of the response body and the content of the response body.
-The content should be utf-8 decoded.
-"""
+"""fetches https://intranet.hbtn.io/status."""
 import requests
 
 
