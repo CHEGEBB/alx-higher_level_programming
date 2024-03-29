@@ -3,7 +3,6 @@
 It fetches the URL and displays the value of the X-Request-Id variable found in the header of the response.
 The value of this variable is different for each request. 
 """
-
 import urllib.request
 import sys
 
