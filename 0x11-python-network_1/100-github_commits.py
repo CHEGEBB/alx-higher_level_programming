@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""lists the 10 most recent commits on a given GitHub repository.
+"""This script that takes your Github credentials (username and password) and uses the Github API to display your id
+It fetches the 10 most recent commits from the repository specified in the arguments.
 """
 import sys
 import requests
