@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""A script that:
-- takes in a URL,
-- sends a request to the URL and displays the value
-- of the X-Request-Id variable found in the header ofthe response.
+"""This script that fetches https://intranet.hbtn.io/status
+It fetches the URL and displays the value of the X-Request-Id variable found in the header of the response.
+The value of this variable is different for each request. 
 """
-import sys
+
 import urllib.request
+import sys
+
 
 if __name__ == "__main__":
     url = sys.argv[1]
