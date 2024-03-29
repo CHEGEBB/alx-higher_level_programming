@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""This script that takes in a URL, sends a request to the URL and displays the body of the response (decoded in utf-8).
-It handles HTTP errors.
+"""A script that
+- takes in a URL
+- sends a request to the URL
+- displays the body of the response.
 """
 import sys
 import requests
