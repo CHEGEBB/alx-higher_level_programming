@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""A script that:
-- takes your GitHub credentials (username and password)
-- uses the GitHub API to display your id
+"""This script that takes your Github credentials (username and password) and uses the Github API to display your id
+Usage: ./10-my_github.py <username> <password>
 """
 import sys
 import requests
