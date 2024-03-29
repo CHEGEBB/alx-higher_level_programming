@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Module for sending a POST request with an email."""
+"""This Module for sending a POST request with an email.
+It takes in a URL and an email, sends a POST request to the passed URL with the email as a parameter, and displays the body of the response (decoded in utf-8)
+"""
 import requests
 from sys import argv
 
